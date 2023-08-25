@@ -1,0 +1,329 @@
+:root {
+  --primary: 33, 53, 71; /* 0, 45, 64 */
+  --secondary: 246, 248, 251; /* 217, 236, 242 */
+  --accent: 26, 166, 183;
+
+  --state-error-rgb: 255, 86, 50;
+  --state-warning-rgb: 255, 171, 35;
+  --state-success-rgb: 39, 179, 129;
+  --state-info-rgb: 18, 131, 227;
+  --state-help-rgb: 101, 84, 189;
+
+  --brand-primary-100: rgba(var(--primary), 1);
+  --brand-primary-99: rgba(var(--primary), 0.99);
+  --brand-primary-98: rgba(var(--primary), 0.98);
+  --brand-primary-97: rgba(var(--primary), 0.97);
+  --brand-primary-96: rgba(var(--primary), 0.96);
+  --brand-primary-95: rgba(var(--primary), 0.95);
+  --brand-primary-90: rgba(var(--primary), 0.9);
+  --brand-primary-85: rgba(var(--primary), 0.85);
+  --brand-primary-80: rgba(var(--primary), 0.8);
+  --brand-primary-75: rgba(var(--primary), 0.75);
+  --brand-primary-70: rgba(var(--primary), 0.7);
+  --brand-primary-65: rgba(var(--primary), 0.65);
+  --brand-primary-60: rgba(var(--primary), 0.6);
+  --brand-primary-55: rgba(var(--primary), 0.55);
+  --brand-primary-50: rgba(var(--primary), 0.5);
+  --brand-primary-45: rgba(var(--primary), 0.45);
+  --brand-primary-40: rgba(var(--primary), 0.4);
+  --brand-primary-35: rgba(var(--primary), 0.35);
+  --brand-primary-30: rgba(var(--primary), 0.3);
+  --brand-primary-25: rgba(var(--primary), 0.25);
+  --brand-primary-20: rgba(var(--primary), 0.2);
+  --brand-primary-15: rgba(var(--primary), 0.15);
+  --brand-primary-10: rgba(var(--primary), 0.1);
+  --brand-primary-5: rgba(var(--primary), 0.05);
+
+  --brand-secondary-100: rgba(var(--secondary), 1);
+  --brand-secondary-99: rgba(var(--secondary), 0.99);
+  --brand-secondary-98: rgba(var(--secondary), 0.98);
+  --brand-secondary-97: rgba(var(--secondary), 0.97);
+  --brand-secondary-96: rgba(var(--secondary), 0.96);
+  --brand-secondary-95: rgba(var(--secondary), 0.95);
+  --brand-secondary-90: rgba(var(--secondary), 0.9);
+  --brand-secondary-85: rgba(var(--secondary), 0.85);
+  --brand-secondary-80: rgba(var(--secondary), 0.8);
+  --brand-secondary-75: rgba(var(--secondary), 0.75);
+  --brand-secondary-70: rgba(var(--secondary), 0.7);
+  --brand-secondary-65: rgba(var(--secondary), 0.65);
+  --brand-secondary-60: rgba(var(--secondary), 0.6);
+  --brand-secondary-55: rgba(var(--secondary), 0.55);
+  --brand-secondary-50: rgba(var(--secondary), 0.5);
+  --brand-secondary-45: rgba(var(--secondary), 0.45);
+  --brand-secondary-40: rgba(var(--secondary), 0.4);
+  --brand-secondary-35: rgba(var(--secondary), 0.35);
+  --brand-secondary-30: rgba(var(--secondary), 0.3);
+  --brand-secondary-25: rgba(var(--secondary), 0.25);
+  --brand-secondary-20: rgba(var(--secondary), 0.2);
+  --brand-secondary-15: rgba(var(--secondary), 0.15);
+  --brand-secondary-10: rgba(var(--secondary), 0.1);
+  --brand-secondary-5: rgba(var(--secondary), 0.05);
+
+  --brand-accent-100: rgba(var(--accent), 1);
+  --brand-accent-95: rgba(var(--accent), 0.95);
+  --brand-accent-90: rgba(var(--accent), 0.9);
+  --brand-accent-85: rgba(var(--accent), 0.85);
+  --brand-accent-80: rgba(var(--accent), 0.8);
+  --brand-accent-75: rgba(var(--accent), 0.75);
+  --brand-accent-70: rgba(var(--accent), 0.7);
+  --brand-accent-65: rgba(var(--accent), 0.65);
+  --brand-accent-60: rgba(var(--accent), 0.6);
+  --brand-accent-55: rgba(var(--accent), 0.55);
+  --brand-accent-50: rgba(var(--accent), 0.5);
+  --brand-accent-45: rgba(var(--accent), 0.45);
+  --brand-accent-40: rgba(var(--accent), 0.4);
+  --brand-accent-35: rgba(var(--accent), 0.35);
+  --brand-accent-30: rgba(var(--accent), 0.3);
+  --brand-accent-25: rgba(var(--accent), 0.25);
+  --brand-accent-20: rgba(var(--accent), 0.2);
+  --brand-accent-15: rgba(var(--accent), 0.15);
+  --brand-accent-10: rgba(var(--accent), 0.1);
+  --brand-accent-5: rgba(var(--accent), 0.05);
+
+  /* deprecated */
+  --brand-primary-dark-100: var(--brand-primary-100);
+  --brand-primary-dark-95: var(--brand-primary-95);
+  --brand-primary-dark-90: var(--brand-primary-90);
+  --brand-primary-dark-70: var(--brand-primary-70);
+  --brand-primary-dark-50: var(--brand-primary-50);
+
+  --brand-primary-light-100: var(--brand-secondary-100);
+  --brand-primary-light-90: var(--brand-secondary-90);
+  --brand-primary-light-30: var(--brand-secondary-30);
+
+  --brand-secondary: var(--brand-accent-100);
+  /* deprecated */
+
+  /* Background Colors */
+  --background-primary: #ffffff;
+  --background-secondary: #fafafa;
+  --background-tertiary: rgb(221, 234, 238);
+  --background-quaternary: #7b7a7a;
+  --background-quinary: #2c2c2c;
+
+  /* Text Colors */
+  --text-primary: var(rgba(0, 0, 0, 0.87));
+  --text-secondary: var(--brand-secondary-70);
+  --text-tertiary: #7b7a7a;
+  --text-quaternary: #b6b5b5;
+  --text-quinary: #ffffff;
+
+  /* State Colors */
+  --state-disabled: #7b7a7a;
+  --state-disabled-light: #e6e6e6;
+  --state-error: rgb(var(--state-error-rgb));
+  --state-warning: rgb(var(--state-warning-rgb));
+  --state-success: rgb(var(--state-success-rgb));
+  --state-info: rgb(var(--state-info-rgb));
+  --state-help: rgb(var(--state-help-rgb));
+
+  /* Typography Controls
+     Format - font: font-style font-variant font-weight font-size/line-height font-family;
+         - font-weight = 400(Regular), 500(Medium), 600(SemiBold), 700(Bold);
+         - --[type]-text-transform: normal, uppercase;
+  */
+  --font-family: "Mulish", sans-serif;
+  --line-height: 2.4rem;
+  --line-height-large: 4.8rem;
+  --font-size: 1.6rem;
+
+  --h1: normal normal 900 6.4rem/150% var(--font-family);
+  --h2: normal normal 900 3.2rem/3.2rem var(--font-family);
+  --h3: normal normal 900 2.8rem/3.2rem var(--font-family);
+  --h4: normal normal 900 2.4rem/150% var(--font-family);
+  --h5: normal normal 900 2.1rem/150% var(--font-family);
+  --h6: normal normal 700 18px/32px var(--font-family);
+
+  --paragraph: normal normal 500 var(--font-size) / var(--line-height)
+    var(--font-family);
+  --link: normal normal 500 var(--font-size) / var(--line-height)
+    var(--font-family);
+  --bold: normal normal 700 var(--font-size) / var(--line-height)
+    var(--font-family);
+  --emphasis: normal normal 500 var(--font-size) / var(--line-height)
+    var(--font-family);
+
+  --button-text-s: normal normal 500 1.4rem / var(--line-height)
+    var(--font-family);
+  --button-text-m: normal normal 600 var(--font-size) / var(--line-height)
+    var(--font-family);
+  --button-text-l: normal normal 600 1.8rem / var(--line-height)
+    var(--font-family);
+  --button-text-transform: normal;
+
+  --chip-text: normal normal 500 1.4rem / var(--line-height) var(--font-family);
+  --chip-text-transform: normal;
+
+  --input-text: normal normal 400 var(--font-size) / var(--line-height)
+    var(--font-family); /* Text, Placeholders, Button Group */
+
+  --label: normal normal 400 1.4rem / var(--line-height) var(--font-family);
+  --label-inline: normal normal 400 var(--font-size) / var(--line-height)
+    var(--font-family); /* Radio Buttons, Checkboxes */
+
+  --infobox: normal normal 400 var(--font-size) / var(--line-height)
+    var(--font-family);
+  --toggle: normal normal 500 1.2rem / var(--line-height) var(--font-family);
+
+  --table-h: normal normal 500 1.6rem / var(--line-height) var(--font-family);
+  --table-t: normal normal 400 var(--font-size) / var(--line-height)
+    var(--font-family);
+  --table-f: normal normal 500 1.6rem / var(--line-height) var(--font-family);
+
+  /* Layout */
+  --nav: 64px;
+  --aside: 280px;
+  --aside-close: calc(var(--aside) - (var(--aside) * 2));
+  --aside-items: 64px;
+  --layout-border: solid 1px var(--component-secondary);
+  --content-padding: 32px;
+  --content-padding-mobile: 16px;
+  --nav-shadow: var(--box-shadow-s);
+  --aside-shadow: var(--box-shadow-s);
+
+  /* Spacing
+     - Margins
+     - Paddings
+     - Spacing (hr tag)
+  */
+  --spacing-xs: 4px;
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-d: 24px; /* default */
+  --spacing-l: 32px;
+  --spacing-xl: 48px;
+
+  /* Global Border Radius
+     - Input, Select, Textarea
+     - Buttons, Radio, Switches, Toggles
+     - Cards
+  */
+  --border-radius-s: 4px; /* Chips, Inputs Inner; switches Inner; Toggle Inner; Inner Buttons */
+  --border-radius-m: 6px; /* Inputs, Buttons, checkboxes, Radios, switches */
+  --border-radius-l: 12px; /* Boxes, Popups, Cards */
+  --border-radius-r: 999px; /* Radio Button */
+
+  /* Global Box Shadows */
+  --box-shadow-btn: 0 4px 4px -1px rgba(0, 0, 0, 0.2);
+  --box-shadow-s: 0 0 6px rgba(0, 0, 0, 0.2);
+  --box-shadow-m: 0 3px 6px rgba(0, 0, 0, 0.1);
+  --box-shadow-l: 0 6px 12px -6px var(--brand-primary-10),
+    0 12px 24px -10px var(--brand-primary-10);
+  --box-shadow-h: 0 12px 24px -12px var(--brand-primary-30),
+    0 24px 48px -20px var(--brand-primary-30);
+
+  /* Global Text Shadows */
+  --text-shadow-s: 0 2px 6px rgba(0, 0, 0, 0.2);
+  --text-shadow-m: 0 3px 6px rgba(0, 0, 0, 0.3);
+  --text-shadow-l: 0 6px 12px rgba(0, 0, 0, 0.1);
+
+  /* Buttons / Buttons Icon / Inputs / Switch / Radio border width */
+  --border-width: 1px;
+
+  /* Button Controls */
+  --button-padding-s: 0rem 0.6rem;
+  --button-padding-m: calc(0.8rem - var(--border-width)) 1.6rem;
+  --button-padding-l: calc(1.2rem - var(--border-width)) 2.4rem;
+  --button-icon-spacing-s: 0.4rem;
+  --button-icon-spacing-m: 0.6rem;
+  --button-icon-spacing-l: 0.8rem;
+  --button-border: solid var(--border-width) transparent;
+  --button-radius: var(--border-radius-m);
+  --button-shadow: none;
+  --button-shadow-hover: none;
+
+  /* Button Group Controls */
+  --button-group-border: solid var(--border-width) var(--component-primary);
+  --button-group-radius: var(--border-radius-m);
+  --button-group-radius-inner: var(--border-radius-s);
+  --button-group-size: var(--line-height);
+  --button-group-padding-o: 0.2rem;
+  --button-group-padding-i: calc(0.6rem - var(--border-width)) 1.2rem;
+
+  /* Chip Controls */
+  --chip-padding: 0rem 0.6rem;
+  --chip-icon-spacing: 0.4rem;
+  --chip-border: solid var(--border-width) transparent;
+  --chip-radius: var(--border-radius-s);
+  --chip-shadow: none;
+  --chip-shadow-hover: none;
+
+  /* Icon Button Controls */
+  --icon-button-padding-s: 0.2rem;
+  --icon-button-padding-m: calc(0.8rem - var(--border-width));
+  --icon-button-padding-l: calc(1.2rem - var(--border-width));
+  --icon-button-size-s: 2.4rem;
+  --icon-button-border: solid var(--border-width) transparent;
+  --icon-button-radius: var(--border-radius-m);
+  --icon-button-shadow: none;
+  --icon-button-shadow-hover: none;
+
+  /* Radio Controls */
+  --radio-color: var(--brand-primary-tint);
+  --radio-size-s: var(--line-height);
+  --radio-size: 3.2rem;
+  --radio-padding: 0.4rem;
+  --radio-border: solid var(--border-width) var(--component-primary);
+  --radio-radius: var(--border-radius-r);
+
+  /* Toggle Controls */
+  --toggle-color: var(--brand-primary-tint);
+  --toggle-size-s: var(--font-size);
+  --toggle-size: var(--line-height);
+  --toggle-padding-s: 0.2rem;
+  --toggle-padding: 0.4rem;
+  --toggle-border: solid var(--border-width) var(--component-primary);
+  --toggle-radius: var(--border-radius-m);
+  --toggle-radius-inner: var(--border-radius-s);
+
+  /* Input Controls */
+  --input-padding-s: 0 0.4rem;
+  --input-padding: calc(0.8rem - var(--border-width));
+  --input-border: solid var(--border-width) var(--component-primary);
+  --input-radius: var(--border-radius-m);
+  --input-icon-s: 2rem;
+
+  /* Value Input Controls */
+  --value-input-border: solid var(--border-width) var(--component-primary);
+  --value-input-radius: var(--border-radius-m);
+  --value-input-radius-inner: var(--border-radius-s);
+  --value-input-size-s: var(--font-size);
+  --value-input-size: 2.4rem;
+  --value-input-padding-o: 0.2rem;
+  --value-input-padding-i: calc(0.6rem - var(--border-width));
+
+  /* Grid */
+  --grid-border: solid 0.1rem var(--component-secondary);
+  --grid-padding-l: 1.2rem;
+  --grid-padding: 0.8rem;
+  --grid-padding-s: 0.4rem;
+  --grid-radius: var(--border-radius-l);
+
+  /* Drag & Drop */
+  --dnd-border: dotted 0.1rem var(--component-primary);
+  --dnd-border-active: dotted 0.1rem var(--brand-primary-tint);
+  --dnd-color: var(--component-primary);
+  --dnd-color-active: var(--brand-primary-tint);
+  --dnd-background: var(--background-secondary);
+  --dnd-background-active: var(--background-tertiary);
+  --dnd-padding: 2.4rem;
+  --dnd-radius: var(--border-radius-l);
+
+  /* Carousel */
+  --preview-size: 48rem;
+  --thumbnail-size-two: calc(
+    calc(var(--preview-size) - calc(2.4rem * 1)) / 2
+  ); /* Two Thumbnails */
+  --thumbnail-size-three: calc(
+    calc(var(--preview-size) - calc(2.4rem * 2)) / 3
+  ); /* Three Thumbnails */
+  --thumbnail-size-four: calc(
+    calc(var(--preview-size) - calc(2.4rem * 3)) / 4
+  ); /* Four Thumbnails */
+  --thumbnail-size-five: calc(
+    calc(var(--preview-size) - calc(2.4rem * 4)) / 5
+  ); /* Five Thumbnails */
+  --thumbnail-size-six: calc(
+    calc(var(--preview-size) - calc(2.4rem * 5)) / 6
+  ); /* Six Thumbnails */
+}

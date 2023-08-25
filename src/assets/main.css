@@ -1,0 +1,258 @@
+/**
+ * Purpose: Main style for the app used globally
+ */
+
+/* @import url("@/assets/styles/material-components-web.min.css"); */
+
+/* @import url("@/assets/styles/reset.css"); */
+@import url("./fonts.css");
+@import url("./theme.css");
+@import url("./icons.css");
+
+:root {
+  --mdc-theme-primary: rgba(0, 45, 64, 1) !important;
+  --mdc-theme-primary-dark: rgba(0, 45, 64, 1) !important;
+  --mdc-theme-secondary: var(--brand-secondary) !important;
+
+  --mdc-checkbox-unchecked-color: var(--brand-primary-light-100) !important;
+
+  --mdc-theme-background: #fff;
+  --mdc-theme-surface: #fff;
+  --mdc-theme-error: #b00020;
+  --mdc-theme-on-primary: #fff;
+  --mdc-theme-on-secondary: #fff;
+  --mdc-theme-on-surface: #000;
+  --mdc-theme-on-error: #fff;
+  --mdc-theme-text-primary-on-background: rgba(0, 0, 0, 0.87);
+  --mdc-theme-text-secondary-on-background: rgba(0, 0, 0, 0.54);
+  --mdc-theme-text-hint-on-background: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-disabled-on-background: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-icon-on-background: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-primary-on-light: rgba(0, 0, 0, 0.87);
+  --mdc-theme-text-secondary-on-light: rgba(0, 0, 0, 0.54);
+  --mdc-theme-text-hint-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-disabled-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-icon-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-primary-on-dark: white;
+  --mdc-theme-text-secondary-on-dark: rgba(255, 255, 255, 0.7);
+  --mdc-theme-text-hint-on-dark: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-disabled-on-dark: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-icon-on-dark: rgba(255, 255, 255, 0.5);
+
+  --top-bar-height: 64px;
+  --side-menu-min-width: 320px;
+  --right-side-menu-min-width: 40vw;
+  --side-menu-min-width-neg: -288px;
+  --side-menu-max-width: 80vw;
+}
+
+/* Global Text */
+html {
+  font-size: 62.5%;
+}
+
+/* Global Text */
+body {
+  background-color: var(--brand-primary-15);
+}
+
+body,
+textarea,
+button,
+form,
+div,
+td,
+th,
+ul,
+li,
+p,
+a,
+q,
+address,
+time {
+  font-family: var(--font-family);
+  font: var(--paragraph);
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--text-primary);
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family);
+  color: var(--text-primary);
+  /*text-transform:capitalize;*/
+  letter-spacing: 0;
+  word-spacing: 0.4rem;
+  text-align: left;
+  /*padding-bottom: 1.6rem;*/
+}
+
+/*h1 {font: var(--h1);} */
+h2 {
+  font: var(--h2);
+}
+
+h3 {
+  font: var(--h3);
+}
+
+h4 {
+  font: var(--h4);
+}
+
+/*h5 {font: var(--h5);}*/
+h6 {
+  font: var(--h6);
+  margin: 0;
+}
+
+b,
+strong {
+  font: var(--bold);
+}
+
+i,
+em {
+  font: var(--emphasis);
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  margin: 0;
+}
+
+hr {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 64px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+/*
+  This needs to be build out as a Icon Button Component
+*/
+.icon-container {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  --icon-fill: var(--brand-secondary-80);
+  border-radius: var(--border-radius-m);
+  padding: 4px;
+  margin-left: 8px;
+}
+
+.icon-container.large {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  --icon-height: 28px;
+}
+
+.icon-container:hover {
+  --icon-fill: var(--brand-accent-100);
+  background: var(--brand-secondary-10);
+}
+
+.icon-container:active {
+  transform: scale(0.95);
+}
+
+.icon-container.dark {
+  --icon-fill: var(--brand-primary-80);
+}
+
+.icon-container.dark:hover {
+  background: var(--brand-primary-25);
+}
+
+/* Icon Button */
+
+/* Icon Text Button */
+.top-bar-buttons {
+  width: max-content;
+  height: 24px;
+  line-height: 24px;
+  padding-right: 8px !important;
+
+  transition: background 0.1s ease, color 0.1s ease;
+  will-change: background, color;
+}
+
+.top-bar-buttons {
+  --icon-fill: var(--brand-secondary-80);
+  border-radius: var(--border-radius-m);
+  padding: 4px;
+  margin-left: 8px;
+}
+
+.top-bar-buttons:hover {
+  --icon-fill: var(--brand-accent-100);
+  background: var(--brand-secondary-10);
+  color: var(--brand-accent-100);
+}
+
+.top-bar-buttons:active {
+  transform: scale(0.95);
+}
+/* Icon Text Button */
+
+.card {
+  border: solid 1px;
+  border-radius: var(--border-radius-m);
+  padding: 1em;
+}
+
+.card.warning {
+  border-color: var(--state-warning);
+  background-color: rgba(var(--state-warning-rgb), 0.15);
+  color: var(--text-primary);
+}
+
+.card.error {
+  border-color: var(--state-error);
+  background-color: rgba(var(--state-error-rgb), 0.15);
+  color: var(--text-primary);
+}
+
+.card.info {
+  border-color: var(--state-info);
+  background-color: rgba(var(--state-info-rgb), 0.15);
+  color: var(--text-primary);
+}
+
+.card.help {
+  border-color: var(--state-help);
+  background-color: rgba(var(--state-help-rgb), 0.15);
+  color: var(--text-primary);
+}

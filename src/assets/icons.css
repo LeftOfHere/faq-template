@@ -1,0 +1,73 @@
+/* 
+    CSS MIXINS (This can be used to pierce the Shadow Dom in other Components)
+    --icon-height         Used to change the icons size, 2.4rem is the fallback
+    --icon-fill           Used to change the icons fill, var(--text-secondary) is the fallback
+    --icon-gap-left       Used to change the icons margin-left, 0 is the fallback
+    --icon-gap-right      Used to change the icons margin-right, 0 is the fallback
+    --icon-display        Uses to change icon display property, fallback will be inline-block
+    --icon-shadow         Used to add drop-shadow if needed.
+    --icon-vertical-align Used to set the vertical alignment if Display is inline/inline-block
+    */
+
+svg {
+  cursor: var(--icon-cursor, pointer);
+  display: var(--icon-display, block);
+  fill: currentColor;
+  color: var(--icon-fill, var(--text-primary));
+  height: var(--icon-height, 24px);
+  width: var(--icon-width, auto);
+  margin-left: var(--icon-gap-left, 0);
+  margin-right: var(--icon-gap-right, 0);
+  vertical-align: var(--icon-vertical-align, middle);
+  filter: drop-shadow(var(--icon-shadow));
+  transition: fill 183ms ease, color 183ms ease;
+}
+
+svg[disabled] {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.small {
+  height: 1.6rem;
+}
+
+.medium {
+  height: 2.4rem;
+}
+
+.large {
+  height: 6.4rem;
+}
+
+.primary {
+  color: var(--text-primary);
+}
+
+.secondary {
+  color: var(--text-secondary);
+}
+
+.tertiary {
+  color: var(--text-tertiary);
+}
+
+.error {
+  color: var(--state-error);
+}
+
+.warning {
+  color: var(--state-warning);
+}
+
+.success {
+  color: var(--state-success);
+}
+
+.info {
+  color: var(--state-info);
+}
+
+.help {
+  color: var(--state-help);
+}
